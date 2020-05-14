@@ -10,13 +10,12 @@ $ docker build -t symfony-node-easy .
 
 ### Run Symfony serve
 
-``bash
-$ docker run -it -p 8000:8000 -v ${PWD}:/app symfony-bin-installer serve
+```bash
+$ docker run -it -p 8000:8000 -v ${PWD}:/app symfony-node-easy serve
 ```
 
 ### Get in bash
 
 ```bash
 $ docker run -it --entrypoint bash -v ${PWD}:/app symfony-node-easy
-`
-`
+```
